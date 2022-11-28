@@ -1,0 +1,32 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Urbi. AL Janoub Stadium</title>
+        <meta name="description" content="Urbi. AL Janoub Stadium" />
+        <style>
+            html,
+            body,
+            #container {
+                margin: 0;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container"></div>
+        <script src="https://mapgl.2gis.com/api/js/v1"></script>
+        <script>
+            const map = new mapgl.Map('container', {
+                center: [51.57417, 25.15993],
+                zoom: 17.5,
+                pitch: 60,
+                maxPitch: 60,
+                key: 'feff38c9-8176-4b69-9bbb-65d96cb4beee',
+                autoHideOSMCopyright: true,
+            });
+        </script>
+    </body>
+</html>
